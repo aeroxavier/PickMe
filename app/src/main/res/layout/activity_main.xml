@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kylejimer.lapiz.com.pickme.MainActivity">
+
+
+
+   <RelativeLayout android:layout_height="fill_parent"
+       android:layout_width="fill_parent">
+
+       <ImageButton
+           android:id="@+id/button1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:background="@null"
+           android:src="@drawable/image"
+           android:layout_centerInParent="true"
+           android:onClick="toGallery"
+           />
+       <ImageView
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:id="@+id/imageView1"
+           />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:src="@drawable/green"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="ToShare"
+            android:visibility="gone"
+            />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_alignParentBottom="true"
+           android:text="@string/share"
+           android:textColor="#FFFFFF"
+           android:textSize="28dp"
+           android:layout_marginBottom="21dp"
+           android:textStyle="bold"
+           />
+
+   </RelativeLayout>
+
+
+
+  >
+
+</android.support.constraint.ConstraintLayout>
